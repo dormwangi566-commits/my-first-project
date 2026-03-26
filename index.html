@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" href="code.css">
-        <title>My Profile</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Simple Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
     </head>
     <body>
-        <div class="container">
-            <!-- all your content here -->
+        <div id="Calculator">
+            <input id="display" readonly>
+            <div id="keys">
+<button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+<button onclick="appendToDisplay('7')">7</button>
+<button onclick="appendToDisplay('8')">8</button>
+<button onclick="appendToDisplay('9')">9</button>
+<button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+<button onclick="appendToDisplay('4')">4</button>
+<button onclick="appendToDisplay('5')">5</button>
+<button onclick="appendToDisplay('6')">6</button>
+<button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+<button onclick="appendToDisplay('1')">1</button>
+<button onclick="appendToDisplay('2')">2</button>
+<button onclick="appendToDisplay('3')">3</button>
+<button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+<button onclick="appendToDisplay('0')">0</button>
+<button onclick="appendToDisplay('.')">.</button>
+<button onclick="calculate()">=</button>
+ <button onclick="clearDisplay()" class="operator-btn">c</button>
+  </div>
 
-        <h1>Dorcas Mwangi</h1>
-
-        <p>Hello! I am a student learning Computer and IT .</p>
-        <p>Future Software Developer</p>
-
-        <h2>About Me</h2>
-        <p>I am passionate about technology and want to become a software developer .</p>
-        <h2>Skills</h2>
-        <ul> 
-            <li>HTML (beginner)</li>
-            <li>CSS (learning)</li>
-            <li>Python (starting)</li>
-        </ul>
-        <h2>Contact</h2>
-        <p>Email:dorcasmwangi@gmail.com</p>
-
-        
+            <script src="app.js"></script>
+                       
     </body>
 </html>
